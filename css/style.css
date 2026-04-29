@@ -44,3 +44,10 @@ tfoot th {
 tfoot td {
   font-weight: bold;
 }
+
+.title{
+  text-align: center;
+}
+b{
+  font-size: 125%;
+}
