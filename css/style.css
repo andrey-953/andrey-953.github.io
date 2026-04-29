@@ -9,6 +9,7 @@ table {
   font-family: sans-serif;;
   font-size: 100%;
   letter-spacing: 1px;
+  margin: 20px;
 }
 
 caption {
@@ -45,8 +46,9 @@ tfoot td {
   font-weight: bold;
 }
 
-.title{
+h1{
   text-align: center;
+  background-color: rgb(228 240 245);
 }
 b{
   font-size: 125%;
