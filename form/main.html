@@ -3,15 +3,13 @@
   <head>
     <title>Sheets API Quickstart</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="script" href="form\data.js">
   </head>
   <body>
-    <p>Sheets API Quickstart</p>
     <script>
-        const publishedUrl = `https://docs.google.com/spreadsheets/d/e/2PACX-1vS19lFALf7RzNz_racE7L5VJ0zTgom8P1Lony9myfmtLUZYH7iqj52-DYUockeLRS9UttRl4nYxOMGM/pub?output=json`;
-        const response = await fetch(publishedUrl);
-        const json = await response.json();
-
-        console.log(json);
+        const newDiv = document.createElement("div");
+        document.body.appendChild(newDiv);
     </script>
   </body>
 </html>
