@@ -17,7 +17,7 @@
         const fragment = document.createDocumentFragment();
 
         data = await getData();
-        Object.keys(data).forEach((elem) =>{
+        Object.keys(data[0]).forEach((elem) =>{
           const li = document.createElement('li');
           
           const span = document.createElement('span');
