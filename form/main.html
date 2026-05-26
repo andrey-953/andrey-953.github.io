@@ -8,8 +8,10 @@
   <body>
     <div class="forms">
     </div>
+    <button onclick="updateData()">update</button>
     <script src="data.js"></script>
     <script>
+      async function updateData(){
         var element = document.getElementsByClassName("forms");
 
         const fragment = document.createDocumentFragment();
@@ -25,6 +27,7 @@
           fragment.appendChild(li);
         })
         container.appendChild(fragment);
+      }
         
     </script>
   </body>
