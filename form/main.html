@@ -3,13 +3,29 @@
   <head>
     <title>Sheets API Quickstart</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="script" href="form\data.js">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="script" href="data.js">
   </head>
   <body>
+    <div class="forms">
+    </div>
     <script>
-        const newDiv = document.createElement("div");
-        document.body.appendChild(newDiv);
+        var element = document.getElementsByClassName("forms");
+
+        const fragment = document.createDocumentFragment();
+
+        data = await getData();
+        Object.keys(data).forEach((elem) =>{
+          const li = document.createElement('li');
+          
+          const span = document.createElement('span');
+          span.textContent = itemText;
+          
+          li.appendChild(span);
+          fragment.appendChild(li);
+        })
+        container.appendChild(fragment);
+        
     </script>
   </body>
 </html>

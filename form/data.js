@@ -26,9 +26,8 @@ function csvJSON(csv){
      }
  
      result.push(obj);
- 
   }
   
   //return result; //JavaScript object
-  return JSON.stringify(result); //JSON
+  return result; //JSON
 }
