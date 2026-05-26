@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
-    <div class="forms">
+    <div class="forms" id="forms">
     </div>
     <button onclick="updateData()">update</button>
     <script src="data.js"></script>
     <script>
       async function updateData(){
-        var element = document.getElementsByClassName("forms");
+        var element = document.getElementById("forms");
 
         const fragment = document.createDocumentFragment();
 
